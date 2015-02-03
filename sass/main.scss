@@ -2,4 +2,28 @@
 @import "animate";
 @import "tooltips";
 @import "fonts";
-@import "mixins";
+@import "mixins";0
+
+/* Main styles */
+html, body{
+	height: 100%;
+}
+
+body{
+	font: 14px "Open Sans";
+	color: #666;
+}
+
+header{
+
+}
+
+main{
+	min-height: 400px;
+}
+
+footer{
+
+}
+
+/* BEM styles */
