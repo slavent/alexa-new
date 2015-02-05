@@ -17,11 +17,15 @@
 }
 
 @mixin clearfix{
+	&:before,
 	&:after{
-    	content: "";
-	    display: table;
-	    clear: both;
-  	}
+		content: "";
+		display: table;
+	}
+
+	&:after{
+		clear: both;
+	}
 }
 
 @mixin button($bg_color, $bg_color_hover){

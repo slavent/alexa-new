@@ -1,1 +1,0 @@
-<span class="tooltip" data-tooltip="I'm small tooltip. Don't kill me!">Hover me!</span>
