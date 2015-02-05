@@ -1,0 +1,117 @@
+$test_bg: #efefef;
+
+.row{
+	@include clearfix;
+	position: relative;
+}
+
+.cols{
+	float: left;
+	margin: 0 0 1em;
+	padding: 0 1em;
+	background: $test_bg;
+	/*text-align: center;*/
+	min-height: 70px;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	&.col-1{
+		width: 8.333333%;
+	}
+
+	&.col-2{
+		width: 16.666666%;
+	}
+
+	&.col-3{
+		width: 24.999999%;
+	}
+
+	&.col-4{
+		width: 33.333333%;
+	}
+
+	&.col-5{
+		width: 41.666666%;
+	}
+
+	&.col-6{
+		width: 49.999999%;
+	}
+
+	&.col-7{
+		width: 58.333333%;
+	}
+
+	&.col-8{
+		width: 66.666666%;
+	}
+
+	&.col-9{
+		width: 74.999999%;
+	}
+
+	&.col-10{
+		width: 83.333333%;
+	}
+
+	&.col-11{
+		width: 91.666666%;
+	}
+
+	&.col-12{
+		width: 100%;
+	}
+
+
+	/*&.push-1{
+		left: 8.333333%;
+		right: auto;
+	}
+
+	&.push-2{
+		left: 16.666666%;
+	}
+
+	&.push-3{
+		left: 24.999999%;
+	}
+
+	&.push-4{
+		left: 33.333333%;
+	}
+
+	&.push-5{
+		left: 41.666666%;
+	}
+
+	&.push-6{
+		left: 49.999999%;
+	}
+
+	&.push-7{
+		left: 58.333333%;
+	}
+
+	&.push-8{
+		left: 66.666666%;
+	}
+
+	&.push-9{
+		left: 74.999999%;
+	}
+
+	&.push-10{
+		left: 83.333333%;
+	}
+
+	&.push-11{
+		left: 91.666666%;
+	}
+
+	&.push-12{
+		left: 100%;
+	}*/
+}

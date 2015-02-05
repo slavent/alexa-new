@@ -2,6 +2,9 @@
 @import "animate";
 @import "fonts";
 @import "mixins";
+@import "grids";
+
+$test_bg: #efefef;
 
 /* Main styles */
 html, body{
@@ -11,6 +14,15 @@ html, body{
 body{
 	font: 14px "Open Sans";
 	color: #666;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.wrp{
+	max-width: 1200px;
+	min-width: 960px;
+	margin: 0 auto;
 }
 
 header{
@@ -25,4 +37,57 @@ footer{
 
 }
 
+input,
+textarea,
+button{
+    outline:none;
+}
+
+input{
+	width: 100%;
+	height: 35px;
+	border: 1px solid #efefef;
+	margin: 0 0 10px 0;
+	@include border-radius(3px);
+}
+
+
 /* BEM styles */
+
+button{
+	@include button(#666, #999);
+}
+
+/* for example how to customize .col and .row */
+.good-list{
+
+	&__item{
+		background: none;
+		padding: 0;
+		margin: 0 0 10px 0;
+
+		&:last-child .row{
+			margin-right: 0;
+		}
+	}
+
+	h3{
+		margin: 0 0 10px 0;
+	}
+
+	.row{
+		margin-right: 10px;
+		background: $test_bg;
+		text-align: left;
+		padding: 20px;
+	}
+}
+
+/* form */
+.ask-form{
+	width: 300px;
+	margin: 0 auto;
+	padding: 20px;
+	background: $test_bg;
+	box-sizing: border-box;
+}

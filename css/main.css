@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -3386,34 +3385,223 @@ Copyright (c) 2014 Daniel Eden
   animation-name: slideOutUp;
 }
 
-/* line 1, ../sass/_tooltips.scss */
-.tooltip {
-  border-bottom: 1px dotted #0077AA;
-  cursor: help;
+/* line 3, ../sass/_grids.scss */
+.row {
+  position: relative;
+}
+/* line 20, ../sass/_mixins.scss */
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+/* line 26, ../sass/_mixins.scss */
+.row:after {
+  clear: both;
 }
 
-/* line 6, ../sass/_tooltips.scss */
-.tooltip::after {
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 8px 8px 8px 0px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-  color: #FFF;
-  content: attr(data-tooltip);
-  /* Главная часть кода, определяющая содержимое всплывающей подсказки */
-  margin-top: -24px;
-  opacity: 0;
-  /* Наш элемент прозрачен... */
-  padding: 3px 7px;
-  position: absolute;
-  visibility: hidden;
-  /* ...и скрыт. */
-  transition: all 0.4s ease-in-out;
-  /* Добавить плавности по вкусу */
+/* line 8, ../sass/_grids.scss */
+.cols {
+  float: left;
+  margin: 0 0 1em;
+  padding: 0 1em;
+  background: #efefef;
+  /*text-align: center;*/
+  min-height: 70px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  	/*&.push-1{
+  		left: 8.333333%;
+  		right: auto;
+  	}
+  
+  	&.push-2{
+  		left: 16.666666%;
+  	}
+  
+  	&.push-3{
+  		left: 24.999999%;
+  	}
+  
+  	&.push-4{
+  		left: 33.333333%;
+  	}
+  
+  	&.push-5{
+  		left: 41.666666%;
+  	}
+  
+  	&.push-6{
+  		left: 49.999999%;
+  	}
+  
+  	&.push-7{
+  		left: 58.333333%;
+  	}
+  
+  	&.push-8{
+  		left: 66.666666%;
+  	}
+  
+  	&.push-9{
+  		left: 74.999999%;
+  	}
+  
+  	&.push-10{
+  		left: 83.333333%;
+  	}
+  
+  	&.push-11{
+  		left: 91.666666%;
+  	}
+  
+  	&.push-12{
+  		left: 100%;
+  	}*/
+}
+/* line 20, ../sass/_grids.scss */
+.cols.col-1 {
+  width: 8.333333%;
+}
+/* line 24, ../sass/_grids.scss */
+.cols.col-2 {
+  width: 16.666666%;
+}
+/* line 28, ../sass/_grids.scss */
+.cols.col-3 {
+  width: 24.999999%;
+}
+/* line 32, ../sass/_grids.scss */
+.cols.col-4 {
+  width: 33.333333%;
+}
+/* line 36, ../sass/_grids.scss */
+.cols.col-5 {
+  width: 41.666666%;
+}
+/* line 40, ../sass/_grids.scss */
+.cols.col-6 {
+  width: 49.999999%;
+}
+/* line 44, ../sass/_grids.scss */
+.cols.col-7 {
+  width: 58.333333%;
+}
+/* line 48, ../sass/_grids.scss */
+.cols.col-8 {
+  width: 66.666666%;
+}
+/* line 52, ../sass/_grids.scss */
+.cols.col-9 {
+  width: 74.999999%;
+}
+/* line 56, ../sass/_grids.scss */
+.cols.col-10 {
+  width: 83.333333%;
+}
+/* line 60, ../sass/_grids.scss */
+.cols.col-11 {
+  width: 91.666666%;
+}
+/* line 64, ../sass/_grids.scss */
+.cols.col-12 {
+  width: 100%;
 }
 
-/* line 21, ../sass/_tooltips.scss */
-.tooltip:hover::after {
-  opacity: 1;
-  /* Показываем его */
-  visibility: visible;
+/* Main styles */
+/* line 10, ../sass/main.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 14, ../sass/main.scss */
+body {
+  font: 14px "Open Sans";
+  color: #666;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 22, ../sass/main.scss */
+.wrp {
+  max-width: 1200px;
+  min-width: 960px;
+  margin: 0 auto;
+}
+
+/* line 32, ../sass/main.scss */
+main {
+  min-height: 400px;
+}
+
+/* line 40, ../sass/main.scss */
+input,
+textarea,
+button {
+  outline: none;
+}
+
+/* line 46, ../sass/main.scss */
+input {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #efefef;
+  margin: 0 0 10px 0;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+/* BEM styles */
+/* line 57, ../sass/main.scss */
+button {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  background: #666;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+/* line 42, ../sass/_mixins.scss */
+button:hover {
+  background: #999;
+  text-decoration: none;
+}
+
+/* for example how to customize .col and .row */
+/* line 64, ../sass/main.scss */
+.good-list__item {
+  background: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+/* line 69, ../sass/main.scss */
+.good-list__item:last-child .row {
+  margin-right: 0;
+}
+/* line 74, ../sass/main.scss */
+.good-list h3 {
+  margin: 0 0 10px 0;
+}
+/* line 78, ../sass/main.scss */
+.good-list .row {
+  margin-right: 10px;
+  background: #efefef;
+  text-align: left;
+  padding: 20px;
+}
+
+/* form */
+/* line 87, ../sass/main.scss */
+.ask-form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #efefef;
+  box-sizing: border-box;
 }
