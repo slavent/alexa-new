@@ -3510,40 +3510,58 @@ Copyright (c) 2014 Daniel Eden
 }
 
 /* Main styles */
-/* line 10, ../sass/main.scss */
+/* line 11, ../sass/main.scss */
+html {
+  font-size: 62.5%;
+  /* = 10px */
+}
+
+/* line 15, ../sass/main.scss */
 html, body {
   height: 100%;
 }
 
-/* line 14, ../sass/main.scss */
+/* line 19, ../sass/main.scss */
 body {
-  font: 14px "Open Sans";
+  font-family: "Open Sans";
   color: #666;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-size: 14px;
+  line-height: 21.0px;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
 }
 
-/* line 22, ../sass/main.scss */
+/* line 28, ../sass/main.scss */
 .wrp {
   max-width: 1200px;
   min-width: 960px;
   margin: 0 auto;
 }
 
-/* line 32, ../sass/main.scss */
+/* line 36, ../sass/main.scss */
+header .logo {
+  font-size: 44px;
+  line-height: 66px;
+  font-size: 4.4rem;
+  line-height: 6.6rem;
+}
+
+/* line 41, ../sass/main.scss */
 main {
   min-height: 400px;
 }
 
-/* line 40, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 input,
 textarea,
 button {
   outline: none;
 }
 
-/* line 46, ../sass/main.scss */
+/* line 55, ../sass/main.scss */
 input {
   width: 100%;
   height: 35px;
@@ -3555,7 +3573,7 @@ input {
 }
 
 /* BEM styles */
-/* line 57, ../sass/main.scss */
+/* line 66, ../sass/main.scss */
 button {
   -webkit-border-radius: 3;
   -moz-border-radius: 3;
@@ -3574,21 +3592,25 @@ button:hover {
 }
 
 /* for example how to customize .col and .row */
-/* line 64, ../sass/main.scss */
+/* line 73, ../sass/main.scss */
 .good-list__item {
   background: none;
   padding: 0;
   margin: 0 0 10px 0;
 }
-/* line 69, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 .good-list__item:last-child .row {
   margin-right: 0;
 }
-/* line 74, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
 .good-list h3 {
   margin: 0 0 10px 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
 }
-/* line 78, ../sass/main.scss */
+/* line 88, ../sass/main.scss */
 .good-list .row {
   margin-right: 10px;
   background: #efefef;
@@ -3597,7 +3619,7 @@ button:hover {
 }
 
 /* form */
-/* line 87, ../sass/main.scss */
+/* line 97, ../sass/main.scss */
 .ask-form {
   width: 300px;
   margin: 0 auto;
