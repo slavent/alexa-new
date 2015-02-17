@@ -17,3 +17,27 @@ For fast developing
 8. http://ohmyz.sh/ - for command line
 9. http://www.softmaker.kz/articles/raznoe/nastrojka-xampp-na-mac-os-x.html - XAMPP
 10. http://www.mobilefish.com/services/base64/base64.php - compress svg
+
+# Git
+1. git status
+2. git diff
+3. git add .
+4. git add -A
+5. git commit -m "Some message"
+6. git push origin master
+7. git pull
+8. git log
+9. git remote
+10. git remote add origin name_of_repo.git
+11. git branch -r
+12. git checkout some_branch
+13. git checkout -b some_branch
+14. git checkout --track -b some_branch origin/some_branch
+15. git push origin :heads/new_branch_name - delete remote branch
+16. git branch -d some_branch - delete local branch
+17. git merge some_branch
+18. git reset --hard
+19. git stash
+20. git stash pop
+21. git clone nam_of_repo.git
+22. git init
