@@ -18,6 +18,7 @@ For fast developing
 9. http://www.softmaker.kz/articles/raznoe/nastrojka-xampp-na-mac-os-x.html - XAMPP
 10. http://www.mobilefish.com/services/base64/base64.php - compress svg
 11. http://www.browsersync.io/#install - browser sync
+12. http://www.smushit.com/ysmush.it/ - optimize img
 
 # Git
 1. git status
