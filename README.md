@@ -4,6 +4,7 @@ For fast developing
 
 # Some usefull commands
 1. open /Applications/Google\ Chrome.app --args --disable-web-security
+2. browser-sync start --server --files "css/*.css"
 
 
 # Some usefull links
