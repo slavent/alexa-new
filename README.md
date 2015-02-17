@@ -21,6 +21,7 @@ For fast developing
 11. http://www.browsersync.io/#install - browser sync
 12. http://www.smushit.com/ysmush.it/ - optimize img
 13. http://onjee.ru/3-servisa-chtoby-proverit-skorost-zagruzki-sajta/ - speed of load
+14. http://lorempixel.com/ - lorem pic
 
 # Git
 1. git status
