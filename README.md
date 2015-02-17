@@ -19,6 +19,7 @@ For fast developing
 10. http://www.mobilefish.com/services/base64/base64.php - compress svg
 11. http://www.browsersync.io/#install - browser sync
 12. http://www.smushit.com/ysmush.it/ - optimize img
+13. http://onjee.ru/3-servisa-chtoby-proverit-skorost-zagruzki-sajta/ - speed of load
 
 # Git
 1. git status
