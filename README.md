@@ -22,6 +22,8 @@ For fast developing
 12. http://www.smushit.com/ysmush.it/ - optimize img
 13. http://onjee.ru/3-servisa-chtoby-proverit-skorost-zagruzki-sajta/ - speed of load
 14. http://lorempixel.com/ - lorem pic
+15. https://github.com/noraesae/perfect-scrollbar - good scrollbar
+16. https://github.com/narfdotpl/jquery-typing - typing
 
 # Git
 1. git status
