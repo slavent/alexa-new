@@ -25,6 +25,11 @@ For fast developing
 15. https://github.com/noraesae/perfect-scrollbar - good scrollbar
 16. https://github.com/narfdotpl/jquery-typing - typing
 
+
+# Books
+1. http://largescalejs.ru/ - JS patterns(module, facade, mediator)
+
+
 # Git
 1. git status
 2. git diff
