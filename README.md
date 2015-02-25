@@ -28,6 +28,7 @@ For fast developing
 
 # Books
 1. http://largescalejs.ru/ - JS patterns(module, facade, mediator)
+2. http://habrahabr.ru/post/132472/ - JS patterns
 
 
 # Git
