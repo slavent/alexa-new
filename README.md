@@ -66,16 +66,17 @@ For fast developing
    - a = 0; - в данном случае а - свойство глобального объекта window(в глобальном контексте this - window). Данное     свойство можно удалить delete a. Плюс при парсинге кода браузером данное свойство будет инициализированно   раньше, чем глобальная переменная в первом способе. 
 5. Coffescript
 6. Замыкание:
-var func1 = function(){
 
-   var a = 10;
+   var func1 = function(){
    
-   return function(){
-   
-      return a;
+      var a = 10;
       
-   }
+      return function(){
+      
+         return a;
+         
+      }
+      
+   };
    
-};
-
-func1()(); // return 10
+   func1()(); // return 10
