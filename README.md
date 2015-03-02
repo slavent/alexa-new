@@ -24,6 +24,7 @@ For fast developing
 14. http://lorempixel.com/ - lorem pic
 15. https://github.com/noraesae/perfect-scrollbar - good scrollbar
 16. https://github.com/narfdotpl/jquery-typing - typing
+17. http://naikom.ru/blog/archives/4168 - cirillic fonts
 
 
 # Books
@@ -54,3 +55,12 @@ For fast developing
 20. git stash pop
 21. git clone nam_of_repo.git
 22. git init
+
+
+# JS good practices: 
+1. while(length--){ ... код ... }
+2. Переменные объявляются в одном месте, желательно в начале функции.
+3. Глобальных переменных быть не должно, максимум одна.
+4. 2 способа объявить глобальную переменную:
+   - var a = 0; - в данном случае a - глобальная переменная.
+   - a = 0; - в данном случае а - свойство глобального объекта window(в глобальном контексте this - window). Данное     свойство можно удалить delete a. Плюс при парсинге кода браузером данное свойство будет инициализированно   раньше, чем глобальная переменная в первом способе. 
