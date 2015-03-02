@@ -67,10 +67,15 @@ For fast developing
 5. Coffescript
 6. Замыкание:
 var func1 = function(){
+
    var a = 10;
+   
    return function(){
+   
       return a;
+      
    }
+   
 };
 
 func1()(); // return 10
