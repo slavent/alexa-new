@@ -58,6 +58,19 @@ For fast developing
 21. git clone nam_of_repo.git
 22. git init
 
+# Plugins for Brackets
+1. Autoprefixer
+2. Brackets color pallete
+3. Brackets css color preview
+4. Brackets icons
+5. Code folding
+6. Colorhints
+7. CSSFier
+8. Emmet
+9. Everyscrub
+10. Extract for brackets
+11. Monokai Dark Soda
+12. Quick search
 
 # JS good practices: 
 1. while ( length-- ) { ... код ... }
