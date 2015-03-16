@@ -25,6 +25,7 @@ For fast developing
 15. https://github.com/noraesae/perfect-scrollbar - good scrollbar
 16. https://github.com/narfdotpl/jquery-typing - typing
 17. http://naikom.ru/blog/archives/4168 - cirillic fonts
+18. http://fronteed.com/iCheck/ - custom checkbox and radiobtn
 18. http://caniuse.com/ - can i use
 19. http://habrahabr.ru/post/252287/ - 22 photoshop plugins
 
