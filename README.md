@@ -1,5 +1,5 @@
 # MyBoilerplate
-For fast developing
+For fast developing asaszievit
 
 
 # Some usefull commands
