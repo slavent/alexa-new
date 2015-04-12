@@ -1,103 +1,111 @@
 @import "normalize";
-@import "fonts";
-@import "animate";
-@import "mixins";
-@import "grids";
 
-$test_bg: #efefef;
-
-/* Main styles */
-
-html{
-	font-size: 62.5%; /* = 10px */
+@font-face {
+  font-family: "Bodoni";
+  src: url("../fonts/Bodoni.eot");
+  src: local("вє"), url("../fonts/Bodoni.woff") format("woff"), url("../fonts/Bodoni.ttf") format("truetype"), url("../fonts/Bodoni.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-html, body{
+body, html {
 	height: 100%;
 }
 
-body{
-	font-family: "Open Sans";
-	color: #666;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar {
+	width: 260px;
+	background: #fff;
+	height: 100%;
+	position: relative;
 	box-sizing: border-box;
-	@include fontsize(1.4);
 }
 
-.wrp{
-	max-width: 1200px;
-	min-width: 960px;
-	margin: 0 auto;
+.logo {
+	background: url(../i/logo.png) 0 0 no-repeat;
+	width: 202px;
+	height: 181px;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	margin: 0 0 0 -101px;
 }
 
-header{
+.nav-wrp {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 
-	.logo{
-		@include fontsize(4.4);
+	&:after {
+		content: "";
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		width: 1px;
 	}
 }
 
-main{
-	min-height: 400px;
-}
-
-footer{
-
-}
-
-input,
-textarea,
-button{
-    outline:none;
-}
-
-input{
+nav {
+	display: inline-block;
+	vertical-align: middle;
 	width: 100%;
-	height: 35px;
-	border: 1px solid #efefef;
-	margin: 0 0 10px 0;
-	@include border-radius(3px);
-}
+	margin: 0 0 0 -10px;
 
+	ul{
+		margin: 0;
+		padding: 0 0 0 70px;
+	}
 
-/* BEM styles */
+	li {
+		margin: 0 0 5px 0;
+	}
 
-button{
-	@include button(#666, #999);
-}
+	a {
+		font-family: Bodoni;
+		text-decoration: none;
+		font-size: 17px;
+		text-transform: uppercase;
+		color: #5e575d;
+		transition: all .3s;
+		-webkit-transition: all .3s;
 
-/* for example how to customize .col and .row */
-.good-list{
+		&.active {
+			color: #fbbbbb;
+		}
 
-	&__item{
-		background: none;
-		padding: 0;
-		margin: 0 0 10px 0;
-
-		&:last-child .row{
-			margin-right: 0;
+		&:hover {
+			color: #fbbbbb;
 		}
 	}
+}
 
-	h3{
-		margin: 0 0 10px 0;
-		@include fontsize(1.8);
-	}
+.social-share {
+	position: absolute;
+	left: 70px;
+	bottom: 30px;
 
-	.row{
-		margin-right: 10px;
-		background: $test_bg;
-		text-align: left;
-		padding: 20px;
+	&-item {
+		width: 30px;
+		height: 30px;
+		display: inline-block;
 	}
 }
 
-/* form */
-.ask-form{
-	width: 300px;
-	margin: 0 auto;
-	padding: 20px;
-	background: $test_bg;
-	box-sizing: border-box;
+main {
+
+	&.home {
+		background: url(../i/home_bg.jpg) 0 0 no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top: 0;
+		left: 260px;
+		right: 0;
+		bottom: 0;
+	}
 }
