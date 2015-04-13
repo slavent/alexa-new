@@ -46,13 +46,13 @@
 
                 <form action="" class="order-form">
                     <div class="order-col">
-                        <input type="text" value="Меня зовут" class="order-field-name">
-                        <input type="text" value="Мой телефон" class="order-field-phone">
-                        <input type="text" value="Мой e-mail" class="order-field-email">
+                        <input type="text" value="Меня зовут" onfocus="this.value = this.value=='Меня зовут' ? '' : this.value" onblur="this.value = this.value=='' ? 'Меня зовут' : this.value" class="order-field-name">
+                        <input type="text" value="Мой телефон" onfocus="this.value = this.value=='Мой телефон' ? '' : this.value" onblur="this.value = this.value=='' ? 'Мой телефон' : this.value" class="order-field-phone">
+                        <input type="text" value="Мой e-mail" onfocus="this.value = this.value=='Мой e-mail' ? '' : this.value" onblur="this.value = this.value=='' ? 'Мой e-mail' : this.value" class="order-field-email">
                         <input type="file" name="">
                     </div>
                     <div class="order-col">
-                        <textarea name="" class="order-field-msg">Ваше сообщение</textarea>
+                        <textarea name="" onfocus="this.value = this.value=='Ваше сообщение' ? '' : this.value" onblur="this.value = this.value=='' ? 'Ваше сообщение' : this.value" class="order-field-msg">Ваше сообщение</textarea>
                         <button type="submit" class="order-btn">Отправить</button>
                     </div>
                 </form>
