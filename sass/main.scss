@@ -79,6 +79,7 @@ nav {
 		font-size: 17px;
 		text-transform: uppercase;
 		color: #5e575d;
+		letter-spacing: 1px;
 		transition: all .3s;
 		-webkit-transition: all .3s;
 
@@ -135,7 +136,113 @@ main {
 	}
 }
 
+.me {
+
+	&-photo {
+		width: 70%;
+		display: inline-block;
+		vertical-align: top;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		background-position: center 0;
+		height: 100%;
+		float: left;
+	}
+
+	&-desc {
+		width: 29%;
+		height: 100%;
+		display: inline-block;
+		vertical-align: top;
+		box-sizing: border-box;
+
+		&-fraza {
+			background: url(../i/fraza_bg.jpg) center 0 no-repeat;
+			background-size: 100% auto;
+			height: 350px;
+
+			&-wrp {
+				height: 350px;
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+				color: #fff;
+				font-size: 24px;
+				line-height: 30px;
+				letter-spacing: 1px;
+				font-family: Bodoni;
+				text-transform: uppercase;
+			}
+		}
+
+		&-text {
+			padding: 45px 35px;
+		}
+	}
+}
+
 .gallery {
+
+	&-photo {
+		width: 50%;
+		display: inline-block;
+		vertical-align: top;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		background-position: center 0;
+		height: 100%;
+	}
+
+	&-desc {
+		width: 49%;
+		height: 100%;
+		display: inline-block;
+		vertical-align: top;
+		padding: 45px 35px;
+		position: relative;
+		box-sizing: border-box;
+
+		&-title {
+			margin: 0 0 20px 0;
+			text-align: center;
+			font-size: 24px;
+		}
+	}
+
+	&-nav {
+
+		&__btn_prev {
+			position: absolute;
+			left: 35px;
+			bottom: 45px;
+			padding: 10px 15px;
+			border: 2px solid #c8c8c8;
+			color: #c8c8c8;
+			text-decoration: none;
+			transition: all .3s;
+			-webkit-transition: all .3s;
+
+			&:hover {
+				opacity: .8;
+			}
+		}
+
+		&__btn_next {
+			position: absolute;
+			right: 35px;
+			bottom: 45px;
+			padding: 10px 15px;
+			color: #fff;
+			background: #c8c8c8;
+			text-decoration: none;
+			transition: all .3s;
+			-webkit-transition: all .3s;
+
+			&:hover {
+				opacity: .8;
+			}
+		}
+	}
 
 	&-item {
 		float: left;
