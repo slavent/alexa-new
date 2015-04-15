@@ -139,7 +139,7 @@ main {
 .me {
 
 	&-photo {
-		width: 70%;
+		width: 50%;
 		display: inline-block;
 		vertical-align: top;
 		background-repeat: no-repeat;
@@ -150,7 +150,7 @@ main {
 	}
 
 	&-desc {
-		width: 29%;
+		width: 49%;
 		height: 100%;
 		display: inline-block;
 		vertical-align: top;
@@ -162,9 +162,7 @@ main {
 			height: 350px;
 
 			&-wrp {
-				height: 350px;
-				display: table-cell;
-				vertical-align: middle;
+				padding: 30% 0 0;
 				text-align: center;
 				color: #fff;
 				font-size: 24px;
